@@ -16,7 +16,7 @@ const theme = createTheme({
     },
     props: {
         MuiAppBar: {
-            color: 'transparent',
+            backgroundColor: '#fff',
         },
     },
 });
