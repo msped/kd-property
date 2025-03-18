@@ -1,4 +1,5 @@
 import { Roboto } from "next/font/google";
+import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '@/theme'
 import "./globals.css";
@@ -32,6 +33,7 @@ export default function RootLayout(props) {
         <AppRouterCacheProvider>
           {console.log(theme)}
           <ThemeProvider theme={theme}>
+            <CssBaseline />
             <Header />
             {children}
             <Footer />
