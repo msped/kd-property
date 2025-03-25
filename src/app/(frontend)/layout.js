@@ -1,8 +1,10 @@
 import { Roboto } from "next/font/google";
+import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '@/theme'
 import "./globals.css";
-
+import { ToastContainer } from 'react-toastify';
+import { Bounce } from 'react-toastify';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 
 import Header from "@/app/(frontend)/components/Header";
@@ -30,8 +32,21 @@ export default function RootLayout(props) {
       </head>
       <body className={`${roboto.variable}`}>
         <AppRouterCacheProvider>
-          {console.log(theme)}
           <ThemeProvider theme={theme}>
+          <ToastContainer
+            position="bottom-left"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            transition={Bounce}
+          />
+            <CssBaseline />
             <Header />
             {children}
             <Footer />
