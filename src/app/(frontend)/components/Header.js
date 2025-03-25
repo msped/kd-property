@@ -75,7 +75,7 @@ export default function Header(props) {
                             </Box>
 
                             {/* Right Links */}
-                            <Button color="inherit" component={Link} href="/testimonals" sx={styles.navigationButtons} ml={3}>
+                            <Button color="inherit" component={Link} href="/testimonials" sx={styles.navigationButtons} ml={3}>
                                 Testimonials
                             </Button>
                             <Button color="inherit" component={Link} href="/contact-us" sx={styles.navigationButtons}>
