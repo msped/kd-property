@@ -50,7 +50,7 @@ describe('Header Component', () => {
         const homeButton = screen.getByRole('link', { name: 'Home' });
         const ourWorkButton = screen.getByRole('link', { name: 'Our Work' });
         const testimonialsButton = screen.getByRole('link', { name: 'Testimonials' });
-        const contactUsButton = screen.getByRole('link', { name: 'Contact Us' });
+        const contactUsButton = screen.getByRole('link', { name: 'Contact' });
 
         expect(homeButton).toBeInTheDocument();
         expect(ourWorkButton).toBeInTheDocument();
@@ -90,7 +90,7 @@ describe('Header Component', () => {
         const homeButton = screen.getByRole('link', { name: 'Home' })
         const ourWorkButton = screen.getByRole('link', { name: 'Our Work' })
         const testimonialsButton = screen.getByRole('link', { name: 'Testimonials' })
-        const contactUsButton = screen.getByRole('link', { name: 'Contact Us' })
+        const contactUsButton = screen.getByRole('link', { name: 'Contact' })
 
         expect(homeButton).toBeInTheDocument();
         expect(ourWorkButton).toBeInTheDocument();
@@ -104,12 +104,12 @@ describe('Header Component', () => {
         const homeButton = screen.getByRole('link', { name: 'Home' });
         const ourWorkButton = screen.getByRole('link', { name: 'Our Work' });
         const testimonialsButton = screen.getByRole('link', { name: 'Testimonials' });
-        const contactUsButton = screen.getByRole('link', { name: 'Contact Us' });
+        const contactUsButton = screen.getByRole('link', { name: 'Contact' });
 
         expect(homeButton).toHaveAttribute('href', '/');
         expect(ourWorkButton).toHaveAttribute('href', '/our-work');
-        expect(testimonialsButton).toHaveAttribute('href', '/testimonals');
-        expect(contactUsButton).toHaveAttribute('href', '/contact-us');
+        expect(testimonialsButton).toHaveAttribute('href', '/testimonials');
+        expect(contactUsButton).toHaveAttribute('href', '/contact');
     });
     
     it('renders mobile navigation links with correct hrefs', () => {
@@ -119,10 +119,10 @@ describe('Header Component', () => {
         const homeButton = screen.getByRole('link', { name: /home/i });
         const ourWorkButton = screen.getByRole('link', { name: /our work/i });
         const testimonialsButton = screen.getByRole('link', { name: /testimonials/i });
-        const contactUsButton = screen.getByRole('link', { name: /contact us/i });
+        const contactUsButton = screen.getByRole('link', { name: /contact/i });
         expect(homeButton).toHaveAttribute('href', '/');
         expect(ourWorkButton).toHaveAttribute('href', '/our-work');
         expect(testimonialsButton).toHaveAttribute('href', '/testimonials');
-        expect(contactUsButton).toHaveAttribute('href', '/contact-us');
+        expect(contactUsButton).toHaveAttribute('href', '/contact');
     });
 });

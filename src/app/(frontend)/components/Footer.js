@@ -84,8 +84,8 @@ export default function Footer() {
                             <Link href="/testimonials" color="text.secondary" underline="hover">
                                 Testimonials
                             </Link>
-                            <Link href="/contact-us" color="text.secondary" underline="hover">
-                                Contact Us
+                            <Link href="/contact" color="text.secondary" underline="hover">
+                                Contact
                             </Link>
                         </Stack>
                     </Grid2>
