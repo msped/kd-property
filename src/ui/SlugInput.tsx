@@ -11,7 +11,7 @@ export type SlugInputProps = TextField & {
 }
 
 export default function SlugInput(props: SlugInputProps) {
-    const { trackingField, required, admin: { readOnly } = {} } = props
+    const { trackingField, required } = props
 
     const { value: slugValue = '', setValue: setSlugValue } = useField<string>({
         path: 'slug',
@@ -55,7 +55,7 @@ export default function SlugInput(props: SlugInputProps) {
                     setSlugValue(e.target.value)
                     stopTrackingRef.current = true
                 }}
-                readOnly={readOnly}
+                readOnly
                 required={required}
             />
         </div>
