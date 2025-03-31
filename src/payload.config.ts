@@ -11,6 +11,8 @@ import sharp from 'sharp'
 
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
+import { Testimonials } from './collections/Testimonials'
+
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -22,7 +24,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media],
+  collections: [Users, Media, Testimonials],
   editor: lexicalEditor(),
   email: nodemailerAdapter(), // TODO: define transport
   secret: process.env.PAYLOAD_SECRET || '',
