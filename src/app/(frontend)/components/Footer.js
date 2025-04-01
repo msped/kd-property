@@ -78,8 +78,8 @@ export default function Footer() {
                             <Link href="/" color="text.secondary" underline="hover">
                                 Home
                             </Link>
-                            <Link href="/our-work" color="text.secondary" underline="hover">
-                                Our Work
+                            <Link href="/services" color="text.secondary" underline="hover">
+                                Our Services
                             </Link>
                             <Link href="/testimonials" color="text.secondary" underline="hover">
                                 Testimonials

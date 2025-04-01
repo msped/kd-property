@@ -57,7 +57,7 @@ describe('Footer Component', () => {
     it('renders the navigation links', () => {
         renderComponent();
         const homeLink = screen.getByRole('link', { name: /Home/i });
-        const ourWorkLink = screen.getByRole('link', { name: /Our Work/i });
+        const ourWorkLink = screen.getByRole('link', { name: /Our Services/i });
         const testimonialsLink = screen.getByRole('link', { name: /Testimonials/i });
         const contactUsLink = screen.getByRole('link', { name: /Contact/i });
 
@@ -80,11 +80,11 @@ describe('Footer Component', () => {
     it('renders navigation links with correct hrefs', () => {
         renderComponent();
         const homeLink = screen.getByRole('link', { name: /Home/i });
-        const ourWorkLink = screen.getByRole('link', { name: /Our Work/i });
+        const ourWorkLink = screen.getByRole('link', { name: /Our Services/i });
         const testimonialsLink = screen.getByRole('link', { name: /Testimonials/i });
         const contactUsLink = screen.getByRole('link', { name: /Contact/i });
         expect(homeLink).toHaveAttribute('href', '/');
-        expect(ourWorkLink).toHaveAttribute('href', '/our-work');
+        expect(ourWorkLink).toHaveAttribute('href', '/services');
         expect(testimonialsLink).toHaveAttribute('href', '/testimonials');
         expect(contactUsLink).toHaveAttribute('href', '/contact');
     });

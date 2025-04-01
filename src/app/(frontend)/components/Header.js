@@ -57,8 +57,8 @@ export default function Header(props) {
                             <Button color="inherit" component={Link} href="/" aria-label="Home" sx={styles.navigationButtons} mr={2}>
                                 Home
                             </Button>
-                            <Button color="inherit" component={Link} href="/our-work" aria-label="Our Work" sx={styles.navigationButtons} mr={3}>
-                                Our Work
+                            <Button color="inherit" component={Link} href="/services" aria-label="Our Services" sx={styles.navigationButtons} mr={3}>
+                                Our Services
                             </Button>
 
                             {/* Logo */}
@@ -122,8 +122,8 @@ export default function Header(props) {
                             </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
-                            <ListItemButton sx={{ textAlign: 'center' }} aria-label='Our Work' href='/our-work'>
-                                <ListItemText primary='Our Work' />
+                            <ListItemButton sx={{ textAlign: 'center' }} aria-label='Our Services' href='/services'>
+                                <ListItemText primary='Our Services' />
                             </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
