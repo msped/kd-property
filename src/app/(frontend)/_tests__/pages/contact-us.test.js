@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import ContactUs from '@/app/(frontend)/contact-us/page';
+import ContactUs from '@/app/(frontend)/contact/page';
 
 jest.mock('../../components/FormComponent', () => {
     return function MockFormComponent(props) {

@@ -75,17 +75,17 @@ export default function Footer() {
                             display: 'flex',
                             justifyContent: 'center'
                         }}>
-                            <Link href="/placeholder1" color="text.secondary" underline="hover">
+                            <Link href="/" color="text.secondary" underline="hover">
                                 Home
                             </Link>
-                            <Link href="/placeholder2" color="text.secondary" underline="hover">
-                                Our Work
+                            <Link href="/services" color="text.secondary" underline="hover">
+                                Our Services
                             </Link>
-                            <Link href="/placeholder3" color="text.secondary" underline="hover">
+                            <Link href="/testimonials" color="text.secondary" underline="hover">
                                 Testimonials
                             </Link>
-                            <Link href="/placeholder4" color="text.secondary" underline="hover">
-                                Contact Us
+                            <Link href="/contact" color="text.secondary" underline="hover">
+                                Contact
                             </Link>
                         </Stack>
                     </Grid2>

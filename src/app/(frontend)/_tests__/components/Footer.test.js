@@ -57,9 +57,9 @@ describe('Footer Component', () => {
     it('renders the navigation links', () => {
         renderComponent();
         const homeLink = screen.getByRole('link', { name: /Home/i });
-        const ourWorkLink = screen.getByRole('link', { name: /Our Work/i });
+        const ourWorkLink = screen.getByRole('link', { name: /Our Services/i });
         const testimonialsLink = screen.getByRole('link', { name: /Testimonials/i });
-        const contactUsLink = screen.getByRole('link', { name: /Contact Us/i });
+        const contactUsLink = screen.getByRole('link', { name: /Contact/i });
 
         expect(homeLink).toBeInTheDocument();
         expect(ourWorkLink).toBeInTheDocument();
@@ -80,13 +80,13 @@ describe('Footer Component', () => {
     it('renders navigation links with correct hrefs', () => {
         renderComponent();
         const homeLink = screen.getByRole('link', { name: /Home/i });
-        const ourWorkLink = screen.getByRole('link', { name: /Our Work/i });
+        const ourWorkLink = screen.getByRole('link', { name: /Our Services/i });
         const testimonialsLink = screen.getByRole('link', { name: /Testimonials/i });
-        const contactUsLink = screen.getByRole('link', { name: /Contact Us/i });
-        expect(homeLink).toHaveAttribute('href', '/placeholder1');
-        expect(ourWorkLink).toHaveAttribute('href', '/placeholder2');
-        expect(testimonialsLink).toHaveAttribute('href', '/placeholder3');
-        expect(contactUsLink).toHaveAttribute('href', '/placeholder4');
+        const contactUsLink = screen.getByRole('link', { name: /Contact/i });
+        expect(homeLink).toHaveAttribute('href', '/');
+        expect(ourWorkLink).toHaveAttribute('href', '/services');
+        expect(testimonialsLink).toHaveAttribute('href', '/testimonials');
+        expect(contactUsLink).toHaveAttribute('href', '/contact');
     });
 
     it('renders social media links with correct hrefs', () => {

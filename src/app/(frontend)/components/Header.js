@@ -54,11 +54,11 @@ export default function Header(props) {
                         </IconButton>
                         <Box sx={{ flexGrow: { xs: 0, sm: 1 }, display: { xs: 'block', sm: 'flex' }, justifyContent: 'space-evenly', alignItems: 'center' }}>
                             {/* Left Links */}
-                            <Button color="inherit" component={Link} href="/" sx={styles.navigationButtons} mr={2}>
+                            <Button color="inherit" component={Link} href="/" aria-label="Home" sx={styles.navigationButtons} mr={2}>
                                 Home
                             </Button>
-                            <Button color="inherit" component={Link} href="/our-work" sx={styles.navigationButtons} mr={3}>
-                                Our Work
+                            <Button color="inherit" component={Link} href="/services" aria-label="Our Services" sx={styles.navigationButtons} mr={3}>
+                                Our Services
                             </Button>
 
                             {/* Logo */}
@@ -75,11 +75,11 @@ export default function Header(props) {
                             </Box>
 
                             {/* Right Links */}
-                            <Button color="inherit" component={Link} href="/testimonals" sx={styles.navigationButtons} ml={3}>
+                            <Button color="inherit" component={Link} aria-label='Testimonials' href="/testimonials" sx={styles.navigationButtons} ml={3}>
                                 Testimonials
                             </Button>
-                            <Button color="inherit" component={Link} href="/contact-us" sx={styles.navigationButtons}>
-                                Contact Us
+                            <Button color="inherit" component={Link} href="/contact" aria-label='Contact' sx={styles.navigationButtons}>
+                                Contact
                             </Button>
                         </Box>
                     </Toolbar>
@@ -122,8 +122,8 @@ export default function Header(props) {
                             </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
-                            <ListItemButton sx={{ textAlign: 'center' }} aria-label='Our Work' href='/our-work'>
-                                <ListItemText primary='Our Work' />
+                            <ListItemButton sx={{ textAlign: 'center' }} aria-label='Our Services' href='/services'>
+                                <ListItemText primary='Our Services' />
                             </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
@@ -132,8 +132,8 @@ export default function Header(props) {
                             </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
-                            <ListItemButton sx={{ textAlign: 'center' }} aria-label='Contact Us' href='/contact-us'>
-                                <ListItemText primary='Contact Us' />
+                            <ListItemButton sx={{ textAlign: 'center' }} aria-label='Contact' href='/contact'>
+                                <ListItemText primary='Contact' />
                             </ListItemButton>
                         </ListItem>
                     </List>
