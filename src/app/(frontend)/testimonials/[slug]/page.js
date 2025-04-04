@@ -87,7 +87,7 @@ export default async function TestimonialPage({ params }) {
                     <Typography variant='h4' component='h1' fontWeight={500}>
                         An error occurred while fetching the testimonial.
                     </Typography>
-                    <Button variant='contained' component={Link} href='/testimonals' aria-label='Back to Testimonials'>
+                    <Button variant='contained' component={Link} href='/testimonials' aria-label='Back to Testimonials'>
                         Back to Testimonials
                     </Button>
                 </Stack>
