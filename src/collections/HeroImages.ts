@@ -10,7 +10,7 @@ export const HeroImages: CollectionConfig = {
             name: 'images',
             type: 'array',
             minRows: 1,
-            maxRows: 6,
+            maxRows: 10,
             fields: [
                 {
                     name: 'image',
