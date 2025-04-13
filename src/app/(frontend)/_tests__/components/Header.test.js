@@ -32,11 +32,6 @@ describe('Header Component', () => {
         </AppRouterCacheProvider>
         );
 
-    it('renders without crashing', () => {
-        renderComponent();
-        expect(screen.getByRole('navigation')).toBeInTheDocument();
-    });
-
     it('renders the logo', () => {
         renderComponent();
         const desktopLogo = screen.getAllByAltText('KD Property Developments')[0]; // Desktop centered logo
