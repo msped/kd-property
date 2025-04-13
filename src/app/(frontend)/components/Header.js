@@ -14,6 +14,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import MenuIcon from '@mui/icons-material/Menu';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
@@ -31,16 +32,32 @@ const styles = {
 export default function Header(props) {
     const { window } = props;
     const [open, setOpen] = useState(false)
+    const pathname = usePathname();
+    
 
     const handleDrawerToggle = () => {
         setOpen(!open)
     }
 
+    const isHomepage = pathname === '/';
+    
+
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
         <>
-            <AppBar position="static" color='inherit' component='nav' elevation={0}>
+            <AppBar 
+                position={isHomepage ? 'absolute' : 'static'} 
+                sx={{
+                    backgroundColor: isHomepage ? 'transparent': 'white',
+                    color: isHomepage ? 'white': 'black',
+                    zIndex: isHomepage ? 10 : 1,
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    boxShadow: 'none'
+                }}
+            >
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <IconButton
